@@ -1,0 +1,23 @@
+### Headers settings
+company: Ivan Kostyrka
+
+### Xcode project settings
+project_name: News
+xcodeproj_path: ios-news.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: ios-news
+
+# The file path for new modules
+project_file_path: ios-news/Modules
+
+# The Xcode group path to new modules
+project_group_path: ios-news/Modules
+
+### Dependencies settings section
+cartfile_path: Cartfile
+
+### Templates
+templates:
+- {name: viper_arch}

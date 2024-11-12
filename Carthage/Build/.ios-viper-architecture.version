@@ -1,0 +1,19 @@
+{
+  "commitish" : "1.0.3",
+  "iOS" : [
+    {
+      "hash" : "26787bce690f4b209c9d5dff2c1f14be499a1ccd1d76db259eebb7ca8de8fdf6",
+      "swiftToolchainVersion" : "6.0.2 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)",
+      "name" : "ViperArch",
+      "container" : "ViperArch.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "name" : "ViperArch",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "swiftToolchainVersion" : "6.0.2 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)",
+      "hash" : "e8ac350a00f6df21cfd6048bdb83916443b50fccf68df008853fb80878448ecd",
+      "container" : "ViperArch.xcframework"
+    }
+  ]
+}

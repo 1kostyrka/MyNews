@@ -1,0 +1,11 @@
+framework module ViperArch {
+  umbrella header "ViperArch.h"
+  export *
+
+  module * { export * }
+}
+
+module ViperArch.Swift {
+  header "ViperArch-Swift.h"
+  requires objc
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TextViewController" id="Y6W-OH-hqX" customClass="TextViewController" customModule="ios_news" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-6c-QNs">
+                                <rect key="frame" x="16" y="139" width="365" height="224"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Автор" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-Fb-duL">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Заголовок" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzs-TB-0o1">
+                                        <rect key="frame" x="0.0" y="48" width="365" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uj-Ij-mVk">
+                                        <rect key="frame" x="0.0" y="96" width="365" height="128"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EOu-C6-uJC">
+                                                <rect key="frame" x="4" y="0.0" width="357" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="yxD-oh-oy9"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="EOu-C6-uJC" firstAttribute="top" secondItem="9uj-Ij-mVk" secondAttribute="top" id="dMH-3d-8q9"/>
+                                            <constraint firstItem="EOu-C6-uJC" firstAttribute="leading" secondItem="9uj-Ij-mVk" secondAttribute="leading" constant="4" id="eSE-cg-WZ6"/>
+                                            <constraint firstAttribute="bottom" secondItem="EOu-C6-uJC" secondAttribute="bottom" id="flX-zS-Dds"/>
+                                            <constraint firstAttribute="trailing" secondItem="EOu-C6-uJC" secondAttribute="trailing" constant="4" id="tqS-19-K3C"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDe-p3-R0h">
+                                <rect key="frame" x="24" y="730" width="345" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RW0-uy-WvF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Надіслати"/>
+                                <connections>
+                                    <action selector="didTapSendButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rau-Yi-brR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-wa-qRP">
+                                <rect key="frame" x="24" y="369" width="345" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Cgx-W8-mYf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Додати фото"/>
+                                <connections>
+                                    <action selector="didTapAddPhotoButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AcL-TX-JB5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jbf-6c-QNs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="3RI-4t-umG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tDe-p3-R0h" secondAttribute="bottom" constant="48" id="6ue-7f-WMG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vFb-wa-qRP" secondAttribute="trailing" constant="24" id="8TY-UZ-WtF"/>
+                            <constraint firstItem="tDe-p3-R0h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="H7S-Yw-759"/>
+                            <constraint firstItem="jbf-6c-QNs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="Nkm-na-a1d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jbf-6c-QNs" secondAttribute="trailing" constant="12" id="S6H-bj-kSD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tDe-p3-R0h" secondAttribute="trailing" constant="24" id="bzi-Ir-Q5d"/>
+                            <constraint firstItem="vFb-wa-qRP" firstAttribute="top" secondItem="9uj-Ij-mVk" secondAttribute="bottom" constant="6" id="crf-ls-RkR"/>
+                            <constraint firstItem="vFb-wa-qRP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="eBa-DE-lON"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="vFb-wa-qRP" id="Obg-DC-MMe"/>
+                        <outlet property="containerView" destination="9uj-Ij-mVk" id="49y-dt-j3s"/>
+                        <outlet property="nameTextField" destination="kaf-Fb-duL" id="Y3B-jT-T4e"/>
+                        <outlet property="sendButton" destination="tDe-p3-R0h" id="iyb-Ie-JG0"/>
+                        <outlet property="textView" destination="EOu-C6-uJC" id="Fep-hP-32Y"/>
+                        <outlet property="titleTextField" destination="zzs-TB-0o1" id="h1w-KY-kzF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.00763358778624" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
