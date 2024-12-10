@@ -4,9 +4,9 @@
 
 ## Screenshots
 
-![Main Screen](screenshots/mynews_main.png)
-![Media Screen](screenshots/mynews_media.png)
-![Profile Screen](screenshots/mynews_profile.png)
+![Main Screen](screenshots/mynews:main.png)
+![Media Screen](screenshots/mynews:media.png)
+![Profile Screen](screenshots/mynews:profile.png)
 
 ## Main Features
 
