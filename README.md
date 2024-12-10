@@ -2,6 +2,12 @@
 
 **MyNews** is a news application for keeping track of news in Lviv. It also allows users to suggest their own news stories, creating a community-driven platform for local updates.
 
+## Screenshots
+
+![Main Screen](screenshots/mynews/main.png)
+![Media Screen](screenshots/mynews/media.png)
+![Profile Screen](screenshots/mynews/profile.png)
+
 ## Main Features
 
 - **Browse Local News**: View the latest news updates specifically for Lviv.
